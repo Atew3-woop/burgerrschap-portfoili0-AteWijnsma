@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Burgerschapsportfolio | Ate Wijnsma</title>
+  <style>
+    :root{
+      --paars:#4b1f73;
+      --donker:#1f1530;
+      --groen:#2f6b4f;
+      --groen2:#74a57f;
+      --beige:#f6efe5;
+      --wit:#ffffff;
+      --tekst:#262626;
+      --kaart:#fffaf2;
+      --rand:#e2d5c2;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      color:var(--tekst);
+      background:linear-gradient(180deg,#f6efe5 0%,#fffaf2 100%);
+      line-height:1.7;
+    }
+    header{
+      background:linear-gradient(135deg,rgba(31,21,48,.94),rgba(47,107,79,.9)), url('brede-basislijn.jpg');
+      background-size:cover;
+      background-position:center;
+      color:white;
+      padding:70px 22px 55px;
+    }
+    .wrap{max-width:1150px;margin:0 auto}
+    .hero{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:35px;
+      align-items:center;
+    }
+    .tag{
+      display:inline-block;
+      background:rgba(255,255,255,.16);
+      border:1px solid rgba(255,255,255,.35);
+      padding:7px 13px;
+      border-radius:999px;
+      font-size:14px;
+      margin-bottom:16px;
+    }
+    h1{
+      font-size:48px;
+      line-height:1.05;
+      margin:0 0 16px;
+    }
+    header p{font-size:18px;max-width:760px}
+    .profile{
+      width:100%;
+      max-height:430px;
+      object-fit:cover;
+      border-radius:28px;
+      border:7px solid rgba(255,255,255,.28);
+      box-shadow:0 18px 45px rgba(0,0,0,.35);
+    }
+    nav{
+      position:sticky;
+      top:0;
+      z-index:10;
+      background:rgba(255,250,242,.96);
+      backdrop-filter:blur(8px);
+      border-bottom:1px solid var(--rand);
+    }
+    nav .wrap{
+      display:flex;
+      gap:10px;
+      overflow-x:auto;
+      padding:13px 20px;
+    }
+    nav a{
+      color:var(--donker);
+      text-decoration:none;
+      font-weight:700;
+      white-space:nowrap;
+      padding:8px 12px;
+      border-radius:999px;
+    }
+    nav a:hover{background:#eadcc7}
+    section{padding:58px 22px}
+    section:nth-child(even){background:#fff}
+    .card{
+      background:var(--kaart);
+      border:1px solid var(--rand);
+      border-radius:24px;
+      padding:30px;
+      box-shadow:0 10px 30px rgba(75,31,115,.08);
+    }
+    h2{
+      color:var(--paars);
+      font-size:34px;
+      margin:0 0 18px;
+      line-height:1.15;
+    }
+    h3{color:var(--groen);margin-top:24px}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+      margin-top:22px;
+    }
+    .mini{
+      background:#fff;
+      border:1px solid var(--rand);
+      border-radius:18px;
+      padding:18px;
+    }
+    .accent{
+      border-left:7px solid var(--groen);
+      padding-left:18px;
+      background:#f9f2e8;
+      border-radius:12px;
+    }
+    .theme-label{
+      display:inline-block;
+      color:white;
+      background:var(--groen);
+      padding:6px 12px;
+      border-radius:999px;
+      font-weight:bold;
+      font-size:14px;
+      margin-bottom:14px;
+    }
+    footer{
+      background:var(--donker);
+      color:white;
+      padding:34px 22px;
+      text-align:center;
+    }
+    @media(max-width:850px){
+      .hero{grid-template-columns:1fr}
+      h1{font-size:36px}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+<header id="home">
+  <div class="wrap hero">
+    <div>
+      <span class="tag">MBO 4 | Medewerker Evenementenorganisatie | Firda</span>
+      <h1>Burgerschapsportfolio<br>Ate Wijnsma</h1>
+      <p>Voor dit portfolio verbind ik mijn beroepspraktijk bij De Schierstins aan de zeven burgerschapsthema’s. Mijn beroepsproduct is de organisatie van de Zomerfietstocht 2026, een recreatief en cultureel evenement tussen De Schierstins en Fogelsangh State.</p>
+    </div>
+    <div>
+      <img class="profile" src="ate-foto.png" alt="Foto van Ate Wijnsma">
+    </div>
+  </div>
+</header>
+
+<nav>
+  <div class="wrap">
+    <a href="#home">Home</a>
+    <a href="#schierstins">De Schierstins</a>
+    <a href="#beroepsproduct">Beroepsproduct</a>
+    <a href="#identiteit">Identiteit</a>
+    <a href="#media">Media</a>
+    <a href="#vitaal">Vitaal</a>
+    <a href="#diversiteit">Diversiteit</a>
+    <a href="#financien">Financiën</a>
+    <a href="#rechtstaat">Rechtstaat</a>
+    <a href="#klimaat">Klimaat</a>
+    <a href="#reflectie">Reflectie</a>
+  </div>
+</nav>
+
+<section id="schierstins">
+  <div class="wrap card">
+    <h2>Over De Schierstins</h2>
+    <p>De Schierstins in Feanwâlden is een bijzondere historische locatie waar erfgoed, cultuur en evenementen samenkomen. Tijdens mijn stage leer ik hoe een culturele organisatie activiteiten voorbereidt en uitvoert. De werkzaamheden gaan niet alleen over praktisch regelen, maar ook over communiceren met bezoekers, samenwerken met collega’s en rekening houden met de omgeving.</p>
+    <p>Voor mij past De Schierstins goed bij mijn opleiding, omdat evenementen hier vaak een culturele of maatschappelijke waarde hebben. Het gaat niet alleen om bezoekers ontvangen, maar ook om mensen iets meegeven over geschiedenis, cultuur en de regio.</p>
+    <div class="grid">
+      <div class="mini"><strong>Mijn rol</strong><br>Ondersteunen bij planning, communicatie en voorbereiding.</div>
+      <div class="mini"><strong>Stageplek</strong><br>De Schierstins, Feanwâlden.</div>
+      <div class="mini"><strong>Opleiding</strong><br>MBO 4 Medewerker Evenementenorganisatie.</div>
+    </div>
+  </div>
+</section>
+
+<section id="beroepsproduct">
+  <div class="wrap card">
+    <h2>Mijn beroepsproduct: Zomerfietstocht 2026</h2>
+    <p>Mijn beroepsproduct is de organisatie van de Zomerfietstocht 2026. Dit is een fietstocht van ongeveer 40 kilometer waarbij deelnemers starten en eindigen bij De Schierstins of Fogelsangh State. De tocht is bedoeld voor recreatieve fietsers, senioren, toeristen en mensen die geïnteresseerd zijn in natuur en cultuur.</p>
+    <p>Ik heb binnen dit project gewerkt aan onderdelen zoals de route, promotie, deelnemersadministratie, vrijwilligers, voorzieningen en voorbereiding van materialen. Daardoor laat dit beroepsproduct goed zien wat mijn vak inhoudt: plannen, overzicht houden, communiceren, keuzes maken en verantwoordelijkheid nemen.</p>
+    <p class="accent">Als toekomstig evenementenorganisator moet ik ervoor zorgen dat een evenement niet alleen leuk is, maar ook veilig, duidelijk, haalbaar, gastvrij en maatschappelijk verantwoord.</p>
+  </div>
+</section>
+
+<section id="identiteit">
+  <div class="wrap card">
+    <span class="theme-label">Thema 1</span>
+    <h2>Identiteit & Cultuur</h2>
+    <h3>Wat houdt het thema in?</h3>
+    <p>Identiteit gaat over wie je bent, waar je vandaan komt en wat belangrijk voor je is. Cultuur gaat over gewoonten, geschiedenis, taal, tradities en erfgoed. In de evenementenbranche is cultuur belangrijk, omdat evenementen vaak laten zien wat een plek of groep mensen bijzonder maakt.</p>
+    <h3>Koppeling met mijn beroepsproduct</h3>
+    <p>De Zomerfietstocht past sterk bij dit thema, omdat de route deelnemers laat kennismaken met Friese cultuur en de omgeving van de Noardlike Fryske Wâlden. De Schierstins en Fogelsangh State zijn historische locaties. Door deze plekken te verbinden in een fietstocht wordt cultuur op een laagdrempelige manier zichtbaar gemaakt.</p>
+    <h3>Reflectie</h3>
+    <p>Ik heb geleerd dat een evenement meer kan zijn dan alleen een activiteit. Het kan ook helpen om cultureel erfgoed onder de aandacht te brengen. Mijn verantwoordelijkheid als professional is om respectvol om te gaan met de locatie, de geschiedenis en de doelgroep.</p>
+  </div>
+</section>
+
+<section id="media">
+  <div class="wrap card">
+    <span class="theme-label">Thema 2</span>
+    <h2>Mediawijsheid & Privacy</h2>
+    <h3>Wat houdt het thema in?</h3>
+    <p>Mediawijsheid betekent dat je bewust en kritisch omgaat met media, online communicatie en informatie. Privacy gaat over het beschermen van persoonsgegevens. Bij evenementen is dit belangrijk, omdat je vaak werkt met deelnemersgegevens, foto’s, promotie en online inschrijvingen.</p>
+    <h3>Koppeling met mijn beroepsproduct</h3>
+    <p>Voor de Zomerfietstocht worden gegevens van deelnemers gebruikt, zoals naam, e-mailadres, telefoonnummer en betaalstatus. Deze gegevens zijn nodig voor de organisatie, maar mogen niet zomaar gedeeld worden. Ook bij het maken van foto’s of video’s tijdens het evenement moet rekening worden gehouden met toestemming en professionele communicatie.</p>
+    <h3>Reflectie</h3>
+    <p>Ik heb geleerd dat privacy niet iets is wat je achteraf regelt, maar iets waar je vanaf het begin rekening mee moet houden. Als evenementenorganisator moet ik zorgvuldig werken en duidelijk zijn naar deelnemers over waarvoor hun gegevens worden gebruikt.</p>
+  </div>
+</section>
+
+<section id="vitaal">
+  <div class="wrap card">
+    <span class="theme-label">Thema 3</span>
+    <h2>Vitaal Burgerschap</h2>
+    <h3>Wat houdt het thema in?</h3>
+    <p>Vitaal burgerschap gaat over gezondheid, welzijn, energie en balans. Het gaat om goed voor jezelf zorgen, maar ook om een omgeving creëren waarin anderen gezond en veilig kunnen meedoen.</p>
+    <h3>Koppeling met mijn beroepsproduct</h3>
+    <p>De Zomerfietstocht stimuleert beweging en een actieve leefstijl. Deelnemers zijn buiten, fietsen door de natuur en kunnen in hun eigen tempo deelnemen. Tegelijkertijd moet de organisatie rekening houden met rustmomenten, duidelijke route-informatie, weersomstandigheden en veiligheid onderweg.</p>
+    <h3>Reflectie</h3>
+    <p>Ik heb geleerd dat vitaliteit ook bij organiseren hoort. Tijdens de voorbereiding moet ik mijn eigen planning bewaken, op tijd communiceren en overzicht houden. Tijdens het evenement moet ik meedenken over het welzijn van deelnemers en vrijwilligers.</p>
+  </div>
+</section>
+
+<section id="diversiteit">
+  <div class="wrap card">
+    <span class="theme-label">Thema 4</span>
+    <h2>Diversiteit & Inclusie</h2>
+    <h3>Wat houdt het thema in?</h3>
+    <p>Diversiteit betekent dat mensen verschillen in leeftijd, achtergrond, ervaring, cultuur, gezondheid of interesses. Inclusie betekent dat iedereen zich welkom voelt en mee kan doen.</p>
+    <h3>Koppeling met mijn beroepsproduct</h3>
+    <p>De Zomerfietstocht richt zich op een brede doelgroep, zoals senioren, recreatieve fietsers, toeristen en inwoners uit de regio. Daarom moet de communicatie duidelijk zijn en moet het evenement laagdrempelig blijven. De route, starttijden en informatie moeten begrijpelijk zijn voor verschillende deelnemers.</p>
+    <h3>Reflectie</h3>
+    <p>Ik heb geleerd dat je als organisator niet alleen vanuit jezelf moet denken. Wat voor mij logisch is, is dat niet altijd voor iemand anders. Daarom moet ik rekening houden met verschillende behoeften en zorgen voor een gastvrije sfeer.</p>
+  </div>
+</section>
+
+<section id="financien">
+  <div class="wrap card">
+    <span class="theme-label">Thema 5</span>
+    <h2>Financiën & Economie</h2>
+    <h3>Wat houdt het thema in?</h3>
+    <p>Financiën en economie gaan over inkomsten, uitgaven, budgetteren en keuzes maken met geld. In de evenementenbranche is dit belangrijk, omdat elk evenement kosten heeft en financieel haalbaar moet blijven.</p>
+    <h3>Koppeling met mijn beroepsproduct</h3>
+    <p>Voor de Zomerfietstocht moet rekening worden gehouden met kosten voor catering, promotie, materialen, voorzieningen, een ijsvriezer en eventuele extra benodigdheden. Ook inkomsten uit ticketverkoop of deelnamekosten spelen mee. Door offertes te vergelijken leer ik keuzes maken op basis van prijs, kwaliteit en praktische haalbaarheid.</p>
+    <h3>Reflectie</h3>
+    <p>Ik heb geleerd dat organiseren niet alleen creatief is, maar ook zakelijk. Een goed idee werkt pas als het financieel uitvoerbaar is. Als professional moet ik kunnen onderbouwen waarom ik bepaalde keuzes maak.</p>
+  </div>
+</section>
+
+<section id="rechtstaat">
+  <div class="wrap card">
+    <span class="theme-label">Thema 6</span>
+    <h2>Rechtstaat & Democratie</h2>
+    <h3>Wat houdt het thema in?</h3>
+    <p>De rechtstaat gaat over regels, rechten, plichten en veiligheid. Democratie betekent dat mensen kunnen meedenken, hun mening kunnen geven en dat beslissingen eerlijk en zorgvuldig worden genomen.</p>
+    <h3>Koppeling met mijn beroepsproduct</h3>
+    <p>Bij de Zomerfietstocht moet ik rekening houden met verkeersregels, veiligheid, aansprakelijkheid, privacyregels en duidelijke afspraken met betrokken partijen. Ook moet de communicatie naar deelnemers eerlijk en volledig zijn, zodat iedereen weet waar hij of zij aan toe is.</p>
+    <h3>Reflectie</h3>
+    <p>Ik heb geleerd dat regels niet bedoeld zijn om lastig te zijn, maar om deelnemers, vrijwilligers en de organisatie te beschermen. Als toekomstig evenementenorganisator moet ik verantwoordelijkheid nemen en afspraken goed vastleggen.</p>
+  </div>
+</section>
+
+<section id="klimaat">
+  <div class="wrap card">
+    <span class="theme-label">Thema 7</span>
+    <h2>Klimaat & Milieu</h2>
+    <h3>Wat houdt het thema in?</h3>
+    <p>Klimaat en milieu gaan over duurzaam omgaan met de aarde, natuur, energie, afval en vervoer. Ook evenementen hebben invloed op het milieu, bijvoorbeeld door afval, stroomgebruik, vervoer en materialen.</p>
+    <h3>Koppeling met mijn beroepsproduct</h3>
+    <p>De Zomerfietstocht past goed bij duurzaamheid, omdat fietsen een milieuvriendelijke manier van vervoer is. Daarnaast kan de organisatie bewuste keuzes maken, zoals afval scheiden, lokale leveranciers gebruiken, papier beperken en materialen hergebruiken.</p>
+    <h3>Reflectie</h3>
+    <p>Ik heb geleerd dat duurzame keuzes vaak klein beginnen. Als organisator kan ik niet alles oplossen, maar ik kan wel bewust keuzes maken die minder belastend zijn voor de omgeving.</p>
+  </div>
+</section>
+
+<section id="reflectie">
+  <div class="wrap card">
+    <h2>Persoonlijke eindreflectie</h2>
+    <p>Tijdens mijn stage bij De Schierstins heb ik geleerd dat evenementenorganisatie veel breder is dan alleen een leuke activiteit neerzetten. Je werkt met mensen, regels, geld, planning, veiligheid, communicatie en maatschappelijke verantwoordelijkheid. Door de Zomerfietstocht te koppelen aan de zeven burgerschapsthema’s zie ik beter hoe mijn beroep verbonden is met de samenleving.</p>
+    <p>Ik ben trots dat ik heb kunnen meewerken aan een evenement dat beweging, cultuur, natuur en ontmoeting combineert. Wat ik vooral meeneem is dat ik als professional overzicht moet houden, duidelijk moet communiceren en rekening moet houden met verschillende belangen. Een goed evenement is niet alleen goed georganiseerd, maar ook verantwoord en waardevol voor de omgeving.</p>
+  </div>
+</section>
+
+<footer>
+  <p>Burgerschapsportfolio | Ate Wijnsma | De Schierstins | MBO 4 Evenementenorganisatie</p>
+</footer>
+
+</body>
+</html>
